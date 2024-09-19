@@ -8,7 +8,7 @@ express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .post('/callback/:appId/:apiType', (req, res) => {
+  .post('/callback/:p1/:p2', (req, res) => {
     data = apioutput.output(req);
     res.setHeader('Content-Type', 'application/json');
     res.end(JSON.stringify(data));

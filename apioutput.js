@@ -1,9 +1,5 @@
 function output(req) {
-    return {                       
-        "appId": req.params.appId,
-        "api": req.params.apiType,
-        "message": "callback received"
-    };
+    return req.params;
 }
 
 module.exports = {
